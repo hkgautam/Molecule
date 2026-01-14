@@ -480,6 +480,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    align-items: center;
 }
 
 .detail-label {
@@ -669,7 +670,7 @@ body {
 }
 
 .week-block {
-    background-color: #f9f9f9;
+    background-color: #e8f5e9;
     border-left: 4px solid #1a4d3a;
     border-radius: 8px;
     padding: 1.5rem 2rem;
