@@ -52,26 +52,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Add click handler for Contact Us button
-    const contactButton = document.querySelector('.btn-contact');
-    if (contactButton) {
-        contactButton.addEventListener('click', function() {
-            console.log('Contact Us clicked');
-            // You can add contact form logic here
-            // Example: window.location.href = '/contact';
-        });
-    }
+    // Contact Us button is now an anchor tag, so it's handled by the general anchor link handler above
 
     // Header scroll effect (optional enhancement)
     let lastScroll = 0;
-    const header = document.querySelector('.top-header');
     
     window.addEventListener('scroll', function() {
         const currentScroll = window.pageYOffset;
         
-        if (currentScroll > 100) {
+        if (header && currentScroll > 100) {
             header.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-        } else {
+        } else if (header) {
             header.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
         }
         
