@@ -61,6 +61,8 @@ body {
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.2s;
     white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .snackbar .btn-apply-yellow:hover {
@@ -138,6 +140,8 @@ body {
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.2s;
     white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-apply-yellow:hover {
@@ -368,6 +372,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .btn-apply-hero:hover {
@@ -389,6 +394,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .btn-download:hover {
@@ -746,11 +752,13 @@ body {
 }
 
 .session-topics li {
+    display: flex;
     font-size: 0.9rem;
     color: #555;
     line-height: 1.8;
     position: relative;
     padding-left: 0.75rem;
+    align-items: center;
 }
 
 .session-topics li::before {
@@ -1258,6 +1266,7 @@ body {
     justify-content: space-between;
     width: fit-content;
     max-width: 250px;
+    text-decoration: none;
 }
 
 .btn-apply-footer:hover {

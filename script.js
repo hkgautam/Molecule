@@ -32,25 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add click handlers for Apply Now buttons
-    const applyButtons = document.querySelectorAll('.btn-apply-yellow, .btn-apply-hero');
-    applyButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // You can add your application form logic here
-            console.log('Apply Now clicked');
-            // Example: window.location.href = '/apply';
-        });
-    });
+    // Apply Now buttons are now anchor tags that link directly to the Google Forms application
 
-    // Add click handler for Download Brochure button
-    const downloadButton = document.querySelector('.btn-download');
-    if (downloadButton) {
-        downloadButton.addEventListener('click', function() {
-            console.log('Download Brochure clicked');
-            // You can add download logic here
-            // Example: window.open('/brochure.pdf', '_blank');
-        });
-    }
+    // Download Brochure button is now an anchor tag that links directly to the Google Drive file
 
     // Contact Us button is now an anchor tag, so it's handled by the general anchor link handler above
 
